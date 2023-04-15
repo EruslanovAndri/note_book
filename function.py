@@ -1,8 +1,12 @@
-
+from datetime import datetime
 
 def createNote():
-    pass
-
+    id = 0
+    title = input("Загаловок: ")
+    text = input("Текст: ")
+    time = datetime.now().strftime("%Y-%M-%D %H:%M:%S")
+    return {"ID": id+1,"Title": title,"Text":text,"Time": time}
+    
 def saveNote():
     pass
 
